@@ -52,7 +52,7 @@ class Parking_Garage():
         
         ticket_leave = input("\nEnter ticket number: ")
         if ticket_leave in self.current_ticket:
-            if self.current_ticket[ticket_leave] == True:
+            if self.current_ticket[ticket_leave] != '':
                 #1 Add tickets back to tickets list
                 self.tickets.append(ticket_leave)
                 #2 Remove ticket from current_ticket
